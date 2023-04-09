@@ -1,0 +1,39 @@
+.contenedor {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 4%;
+    margin-right: 4%;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 14px;
+    color: black;
+}
+
+.date {
+    text-align: left;
+}
+
+.type {
+    text-align: right;
+}
+
+h1 {
+    padding: 2px;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 98px;
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+
+hr {
+    border: 1px solid black;
+}
