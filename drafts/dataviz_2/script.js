@@ -10,14 +10,14 @@
 //     return dias;
 //   }
 
-d3.dsv(';', 'dataset.csv', d3.autoType).then(data => {
+d3.dsv(';', 'dataset1.csv', d3.autoType).then(data => {
   data = data.filter(d => d.estado_del_contacto == 'Cerrado')
   data.forEach(function(d) {
     if (d.fecha_cierre_contacto.includes(" ")) {
       d.fecha_cierre_contacto = d.fecha_cierre_contacto.substring(0, d.fecha_cierre_contacto.indexOf(" "));
     }
   });
-  const parseTime = d3.timeParse('%D/%M/%Y')
+  const parseTime = d3.timeParse('%d/%m/%Y')
   data.forEach(function(d) {
       d.fecha_ingreso = parseTime(d.fecha_ingreso);
       d.fecha_cierre_contacto = parseTime(d.fecha_cierre_contacto);
@@ -35,14 +35,15 @@ d3.dsv(';', 'dataset.csv', d3.autoType).then(data => {
     width: 600,
     height: 600,
     marks: [
-      Plot.barX(data, {
-        x: (d) => d.diff,
-        y: () => 1,
+      Plot.rectY(data, Plot.binX({y:'count',}, {x:'diff', thresholds:5},{
+        //x: (d) => d.diff,
+        //y: () => 1,
         bin: {
           scale: "x",
           step: 5,
         },
       }),
+      )
     ]
     })
     // d3.select('#chart').append(() => chart)
