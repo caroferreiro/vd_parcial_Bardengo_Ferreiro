@@ -32,14 +32,25 @@ d3.dsv(';', 'dataset.csv', d3.autoType).then(data => {
   // });
   
   let chart = Plot.plot({
-    width: 600,
-    height: 600,
     marks: [
-      Plot.rectY(data, Plot.binX({y:'count',}, {x:'diff', thresholds:5})),
+      Plot.rectY(data.filter(d => d.diff >= 20), Plot.binX({y:'count',}, {
+        x: 'diff', 
+        thresholds: 5,
+        fill: 'prestacion',
+        fillOpacity: 0.6,
+        stroke: 'prestacion',
+        strokeOpacity: 0.8,
+        strokeWidth: 0.1,
+        title: 'prestacion',
+      })),
         //x: (d) => d.diff,
         //y: () => 1,
     ],
-    })   
-    // d3.select('#chart').append(() => chart)
+    color: {
+      scheme: 'spectral',
+    },
+    width: 400,
+    height: 400,
+    })
     d3.select('#chart').append(() => chart)
 })
