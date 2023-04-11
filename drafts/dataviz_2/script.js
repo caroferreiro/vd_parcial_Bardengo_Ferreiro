@@ -10,7 +10,7 @@
 //     return dias;
 //   }
 
-d3.dsv(';', 'dataset1.csv', d3.autoType).then(data => {
+d3.dsv(';', 'dataset.csv', d3.autoType).then(data => {
   data = data.filter(d => d.estado_del_contacto == 'Cerrado')
   data.forEach(function(d) {
     if (d.fecha_cierre_contacto.includes(" ")) {
@@ -35,17 +35,11 @@ d3.dsv(';', 'dataset1.csv', d3.autoType).then(data => {
     width: 600,
     height: 600,
     marks: [
-      Plot.rectY(data, Plot.binX({y:'count',}, {x:'diff', thresholds:5},{
+      Plot.rectY(data, Plot.binX({y:'count',}, {x:'diff', thresholds:5})),
         //x: (d) => d.diff,
         //y: () => 1,
-        bin: {
-          scale: "x",
-          step: 5,
-        },
-      }),
-      )
-    ]
-    })
+    ],
+    })   
     // d3.select('#chart').append(() => chart)
     d3.select('#chart').append(() => chart)
 })
