@@ -25,6 +25,8 @@ d3.dsv(';', 'dataset.csv', d3.autoType).then(data => {
   data.forEach(function(d) {
     d.diff = d3.timeDay.count(d.fecha_ingreso, d.fecha_cierre_contacto);
   });
+
+  console.log(data)
   // Iterar sobre los datos y calcular el intervalo de tiempo para cada dato
   // data.forEach(dato => {
   //   const intervalo = calcularIntervalo(dato.fecha_ingreso, dato.fecha_cierre_contacto);
@@ -34,16 +36,17 @@ d3.dsv(';', 'dataset.csv', d3.autoType).then(data => {
   let chart = Plot.plot({
     marks: [
       Plot.ruleY([0]),
-      Plot.rectY(data.filter(d => d.diff >= 10), Plot.binX({y:'count',}, {
+      Plot.rectY(data.filter(d => d.diff >= 10), Plot.binX({y:'count'},
+        Plot.groupY({x:'sum'}, {
         x: 'diff', 
         thresholds: 8,
-        fill: 'prestacion',
+        fill: 'diff',
         fillOpacity: 0.6,
         stroke: 'prestacion',
         strokeOpacity: 0.8,
         strokeWidth: 0.1,
         title: 'prestacion',
-      })),
+      }))),
         //x: (d) => d.diff,
         //y: () => 1,
       Plot.axisX({
@@ -58,7 +61,7 @@ d3.dsv(';', 'dataset.csv', d3.autoType).then(data => {
       }),
     ],
     color: {
-      scheme: 'spectral',
+      scheme: 'gnbu',
     },
     width: 400,
     height: 400,
