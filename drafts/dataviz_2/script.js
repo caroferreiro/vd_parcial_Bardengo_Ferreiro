@@ -67,6 +67,7 @@ d3.dsv(';', 'dataset.csv', d3.autoType).then(data => {
     height: 400,
     insetLeft: 10,
     insetRight: 10,
+    insetTop: 10,
     marginBottom: 40,
     })
     d3.select('#chart').append(() => chart)
