@@ -23,7 +23,7 @@ Promise.all([mapaFetch, dataFetch]).then(([barrios, data]) => {
       scheme: 'gnbu',
       type: 'cyclical',
       domain: [0, 1500],
-      range: [0,1],
+      range: [0, 1],
       strokeWidth: 3,
       label: 'Cantidad de denuncias',
       legend: true,
@@ -36,7 +36,7 @@ Promise.all([mapaFetch, dataFetch]).then(([barrios, data]) => {
           return cantReclamos
         },
         stroke: '#ccc',
-        title: d => `${d.properties.BARRIO}\n${d.properties.DENUNCIAS} denuncias`,
+        title: d => `${d.properties.BARRIO}\n${reclamosPorBarrio.get(d.properties.BARRIO).length} denuncias`,
       }),
     ],
   })
