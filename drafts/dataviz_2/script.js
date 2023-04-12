@@ -34,9 +34,9 @@ d3.dsv(';', 'dataset.csv', d3.autoType).then(data => {
   let chart = Plot.plot({
     marks: [
       Plot.ruleY([0]),
-      Plot.rectY(data.filter(d => d.diff >= 20), Plot.binX({y:'count',}, {
+      Plot.rectY(data.filter(d => d.diff >= 10), Plot.binX({y:'count',}, {
         x: 'diff', 
-        thresholds: 5,
+        thresholds: 8,
         fill: 'prestacion',
         fillOpacity: 0.6,
         stroke: 'prestacion',
@@ -49,6 +49,7 @@ d3.dsv(';', 'dataset.csv', d3.autoType).then(data => {
       Plot.axisX({
         label: 'Días que tardó en resolverse →',
         labelOffset: 35,
+        ticks: 8,
       }),
       Plot.axisY({
         label: 'Cantidad de denuncias ↑',
