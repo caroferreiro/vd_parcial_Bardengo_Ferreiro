@@ -4,36 +4,116 @@
 }
 
 .header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-left: 4%;
+    border: 1px solid #d5d5d5;
+    border-left: none;
+    border-right: none;
+    padding: 16px;
+    overflow: hidden;
     margin-right: 4%;
-    font-family: 'Playfair Display SC', serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
-    color: black;
-}
-
-.date {
-    text-align: left;
-}
-
-.type {
     text-align: right;
+    color: black;
+    position: relative;
 }
-
 h1 {
     padding: 2px;
-    font-family: 'Playfair Display SC', serif;
-    font-size: 98px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 70px;
+    max-width: 100%;
     color: black;
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-
-
-
-hr {
-    border: 1px solid black;
+.BA {
+    font-family: 'Rubik', sans-serif;
+    font-size: 60px;
+    font-weight: 800;
+    color: #f7d117;
 }
+
+.secciones {
+    max-width: 100%;
+    margin-left: 4%;
+    margin-right: 4%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    border: 1px solid #d5d5d5;
+    border-left: none;
+    border-right: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,.15);
+}
+
+.not {
+    padding: 16px;
+    background-color: #cdcdcd;
+    color: black;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.not:hover {
+    background-color: #cdcdcd;
+}
+
+.pol {
+    padding: 16px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.pol:hover {
+    background-color: #cdcdcd;
+}
+
+.eco {
+    padding: 16px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.eco:hover {
+    background-color: #cdcdcd;
+}
+
+.soc {
+    padding: 16px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.soc:hover {
+    background-color: #cdcdcd;
+}
+
+.dep {
+    padding: 16px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.dep:hover {
+    background-color: #cdcdcd;
+}
+
+.mun {
+    padding: 16px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.mun:hover {
+    background-color: #cdcdcd;
+}
+/* hr {
+    border: 1px solid black;
+} */
+
+/* color footer: #343434; */
