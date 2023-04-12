@@ -36,6 +36,18 @@ Promise.all([mapaFetch, dataFetch]).then(([barrios, data]) => {
         stroke: '#ccc',
         title: d => `${d.properties.BARRIO}\n${reclamosPorBarrio.get(d.properties.BARRIO).length} denuncias`,
       }),
+      Plot.text(
+        barrios.features,
+        Plot.centroid({
+          text: (d) => d.properties.BARRIO,
+          fill: "currentColor",
+          stroke: null,
+          textAnchor: "center",
+          fontWeight: 'bold',
+          dx: 4,
+          filter: (d) => reclamosPorBarrio.get(d.properties.BARRIO).length > 500
+        })
+      )
     ],
   })
 
