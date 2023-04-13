@@ -16,6 +16,7 @@
     color: black;
     position: relative;
 }
+
 h1 {
     padding: 2px;
     font-family: 'Oswald', sans-serif;
@@ -54,9 +55,10 @@ h1 {
     text-align: center;
     font-family: 'Roboto', sans-serif;
 }
-.not:hover {
-    background-color: #cdcdcd;
-}
+/* .not:hover {
+    background-color: #cdcdcd96;
+    color: rgba(0, 0, 0, 0.422);
+} */
 
 .pol {
     padding: 16px;
@@ -66,7 +68,8 @@ h1 {
     font-family: 'Roboto', sans-serif;
 }
 .pol:hover {
-    background-color: #cdcdcd;
+    background-color: #cdcdcd96;
+    color: rgba(0, 0, 0, 0.422);
 }
 
 .eco {
@@ -77,7 +80,8 @@ h1 {
     font-family: 'Roboto', sans-serif;
 }
 .eco:hover {
-    background-color: #cdcdcd;
+    background-color: #cdcdcd96;
+    color: rgba(0, 0, 0, 0.422);
 }
 
 .soc {
@@ -88,7 +92,8 @@ h1 {
     font-family: 'Roboto', sans-serif;
 }
 .soc:hover {
-    background-color: #cdcdcd;
+    background-color: #cdcdcd96;
+    color: rgba(0, 0, 0, 0.422);
 }
 
 .dep {
@@ -99,7 +104,8 @@ h1 {
     font-family: 'Roboto', sans-serif;
 }
 .dep:hover {
-    background-color: #cdcdcd;
+    background-color: #cdcdcd96;
+    color: rgba(0, 0, 0, 0.422);
 }
 
 .mun {
@@ -110,7 +116,8 @@ h1 {
     font-family: 'Roboto', sans-serif;
 }
 .mun:hover {
-    background-color: #cdcdcd;
+    background-color: #cdcdcd96;
+    color: rgba(0, 0, 0, 0.422);
 }
 /* hr {
     border: 1px solid black;
