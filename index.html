@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TP2 - Bardengo & Ferreiro</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Rubik:wght@500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <body>
+  </head>
+    <body>
     <br>
     <div class="contenedor">
       <div class="header">
@@ -37,8 +38,9 @@
         <p class="epigrafe">Debido al gran volumen de reclamos por autos mal estacionados en Ciudad de Buenos Aires, el gobierno porteño creo una serie de medidas que buscan mejorar el sistema de acarreos.</p>
         <hr>
         <div class="chart">
-          <iframe id="chart_1" src="scripts/index.html"></iframe>
+          <iframe id="chart_1" src="scripts/index.html" width="80%" height="800" scrolling="no"></iframe>
         </div>
+        
     </div>
     
         <!-- <p>EXPLICAR CON DATOS - TP2 | BARDENGO & FERREIRO</p>
@@ -59,8 +61,14 @@
     <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
     <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.contentWindow.js"></script>
-    <script src="scripts/chart_1.js"></script>
+    <!-- <script src="scripts/chart_1.js"></script> -->
     <!-- <script src="scripts/chart_2.js"></script>
     <script src="scripts/chart_3.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.min.js"></script>
+    <script>
+      hljs.highlightAll()
+      iFrameResize({})
+    </script>
+    <!-- <script> iFrameResize({}) </script> -->
   </body>
 </html>

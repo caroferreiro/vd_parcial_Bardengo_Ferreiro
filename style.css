@@ -233,10 +233,9 @@ iframe {
     display: block;
     min-width: 100%;
     border: none;
-    max-width: 1280px;
+    /* max-width: 1280px;
     align-items: center;
-    text-align: center;
-
+    text-align: center; */
 }
 /* #chart_1 {
     overflow-y: auto;
