@@ -224,28 +224,20 @@ hr {
     width: 1000px;
     border: 1px solid #d5d5d5;
 }
-/* #chart_1 {
-    position: absolute;
-    align-items: center;
-    text-align: center;
-} */
-/* iframe {
+
+.chart {
+    margin: 0 auto;
     display: block;
-    min-width: 100%;
-    border: none;
-    /* max-width: 1280px;
-    align-items: center;
     text-align: center;
-}
-/* #chart_1 {
-    overflow-y: auto;
-} */
-#chart_1 svg #chart_2 svg {
+  }
+
+#chart_1 svg, #chart_2 svg, #chart_3 svg  {
     max-width: initial;
     margin-left: auto;
     margin-right: auto;
     margin-top: 3em;
     margin-bottom: 3em;
+    align-items: center;
 } 
 
 /* color footer: #343434; */

@@ -49,7 +49,7 @@ d3.dsv(';', '/data/dataset.csv', d3.autoType).then(data => {
       }),
       Plot.axisX({
         label: 'Días que tardó en resolverse →',
-        labelOffset: 40,
+        labelOffset: 35,
         fontSize: 12,
         ticks: 8,
       }),
