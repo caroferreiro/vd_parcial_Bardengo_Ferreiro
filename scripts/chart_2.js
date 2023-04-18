@@ -12,26 +12,7 @@ d3.dsv(';', '/data/dataset.csv', d3.autoType).then(data => {
       d.diff = d3.timeDay.count(d.fecha_ingreso, d.fecha_cierre_contacto);
   });
   console.log(data)
-  // Iterar sobre los datos y calcular el intervalo de tiempo para cada dato
-  // data.forEach(dato => {
-  //   const intervalo = calcularIntervalo(dato.fecha_ingreso, dato.fecha_cierre_contacto);
-  //   console.log(`El intervalo de tiempo para el dato ${dato} es de ${intervalo} días.`);
-  // });
-  
-  // let chart = Plot.plot({
-  //   marks: [
-  //     Plot.ruleY([0]),
-  //     Plot.rectY(data.filter(d => d.diff >= 10), Plot.binX({y:'count'},
-  //       Plot.groupY({x:'sum'}, {
-  //       x: 'diff', 
-  //       thresholds: 8,
-  //       fill: 'diff',
-  //       fillOpacity: 0.6,
-  //       stroke: 'prestacion',
-  //       strokeOpacity: 0.8,
-  //       strokeWidth: 0.1,
-  //       title: 'prestacion',
-  //     }))),
+
   let data2 = d3.bin()
     .value(d => d.diff)(data)
     .map(d => {
@@ -51,7 +32,7 @@ d3.dsv(';', '/data/dataset.csv', d3.autoType).then(data => {
         stroke: 'diffHasta',
         strokeOpacity: 1,
         strokeWidth: 0.6,
-        title: (d) => `${d.diffDesde}, ${d.diffHasta}`,
+        // title: (d) => `${d.diffDesde}, ${d.diffHasta}`,
         sort:(a,b) => d3.descending(a.diffHasta, b.diffHasta)
       }),
       Plot.barX(data2.filter(d => d.diffHasta > 90), { 
