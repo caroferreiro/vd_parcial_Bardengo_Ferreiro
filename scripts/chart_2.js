@@ -33,7 +33,7 @@ d3.dsv(';', '/data/dataset.csv', d3.autoType).then(data => {
         strokeOpacity: 1,
         strokeWidth: 0.6,
         // title: (d) => `${d.diffDesde}, ${d.diffHasta}`,
-        sort: {x: 'y', reverse:false},
+        sort: {y: 'y', reverse:true},
       }),
       Plot.barX(data2.filter(d => d.diffHasta > 90), { 
         x: 'diffHasta',
@@ -49,12 +49,14 @@ d3.dsv(';', '/data/dataset.csv', d3.autoType).then(data => {
       }),
       Plot.axisX({
         label: 'Días que tardó en resolverse →',
-        labelOffset: 37,
+        labelOffset: 40,
+        fontSize: 12,
         ticks: 8,
       }),
       Plot.axisY({
-        label: 'Cantidad de denuncias',
-        labelOffset: 37,
+        label: 'Cantidad de denuncias →',
+        labelOffset: 44,
+        fontSize: 12,
         ticks: 6,
       }),
     ],
@@ -66,6 +68,7 @@ d3.dsv(';', '/data/dataset.csv', d3.autoType).then(data => {
       // pivot: 10,
       pivot: 55,
     },
+    fontFamily: 'sans-serif',
     zero: false,
     width: 400,
     height: 400,
@@ -73,7 +76,7 @@ d3.dsv(';', '/data/dataset.csv', d3.autoType).then(data => {
     insetRight: 10,
     insetTop: 0,
     marginBottom: 40,
-    marginLeft: 40,
+    marginLeft: 47,
     })
     d3.select('#chart_2').append(() => chart)
 })

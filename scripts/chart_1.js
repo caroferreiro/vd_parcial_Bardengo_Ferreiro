@@ -52,5 +52,5 @@ Promise.all([mapaFetch, dataFetch]).then(([barrios, data]) => {
   })
 
   /* Agregamos al DOM la visualización chartMap */
-  d3.select('#chart').append(() => chartMap)
+  d3.select('#chart_1').append(() => chartMap)
 })
