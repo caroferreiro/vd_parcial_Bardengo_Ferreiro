@@ -240,7 +240,7 @@ hr {
 /* #chart_1 {
     overflow-y: auto;
 } */
-#chart_1 svg, #chart_2 svg {
+#chart_2 svg {
     max-width: initial;
     margin-left: auto;
     margin-right: auto;
