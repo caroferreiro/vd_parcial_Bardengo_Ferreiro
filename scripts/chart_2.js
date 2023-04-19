@@ -33,20 +33,20 @@ d3.dsv(';', '../data/dataset.csv', d3.autoType).then(data => {
         strokeOpacity: 1,
         strokeWidth: 0.6,
         // title: (d) => `${d.diffDesde}, ${d.diffHasta}`,
-        sort: {y: 'y', reverse:true},
+        sort: {y: 'x', reverse:true},
       }),
-      Plot.barX(data2.filter(d => d.diffHasta > 90), { 
-        x: 'diffHasta',
-        y: 'cant',
-        thresholds: 8,
-        fill: 'diffHasta',
-        fillOpacity: 0.3,
-        stroke: 'diffHasta',
-        strokeOpacity: 1,
-        strokeWidth: 0.6,
-        title: (d) => `Cantidad de denuncias: ${d.cant}`,
-        sort:(a,b) => d3.descending(a.diffHasta, b.diffHasta)
-      }),
+      // Plot.barX(data2.filter(d => d.diffHasta > 90), { 
+      //   x: 'diffHasta',
+      //   y: 'cant',
+      //   thresholds: 8,
+      //   fill: 'diffHasta',
+      //   fillOpacity: 0.3,
+      //   stroke: 'diffHasta',
+      //   strokeOpacity: 1,
+      //   strokeWidth: 0.6,
+      //   title: (d) => `Cantidad de denuncias: ${d.cant}`,
+      //   sort:(a,b) => d3.descending(a.diffHasta, b.diffHasta)
+      // }),
       Plot.axisX({
         label: 'Días que tardó en resolverse →',
         labelOffset: 40,
@@ -55,6 +55,7 @@ d3.dsv(';', '../data/dataset.csv', d3.autoType).then(data => {
       }),
       Plot.axisY({
         label: 'Cantidad de denuncias →',
+        label:null,
         labelOffset: 44,
         fontSize: 13,
         ticks: 6,
