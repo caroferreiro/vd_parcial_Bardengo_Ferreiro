@@ -44,7 +44,7 @@ d3.dsv(';', '../data/dataset.csv', d3.autoType).then(data => {
         stroke: 'diffHasta',
         strokeOpacity: 1,
         strokeWidth: 0.6,
-        title: (d) => `${d.diffDesde}, ${d.diffHasta}`,
+        title: (d) => `Cantidad de denuncias: ${d.cant}`,
         sort:(a,b) => d3.descending(a.diffHasta, b.diffHasta)
       }),
       Plot.axisX({
