@@ -1,5 +1,5 @@
-dataEnero = d3.dsv(';', '/data/dataset.csv', d3.autoType)
-dataDiciembre = d3.dsv(';', '/data/dataset_dic.csv', d3.autoType)
+dataEnero = d3.dsv(';', '../data/dataset.csv', d3.autoType)
+dataDiciembre = d3.dsv(';', '../data/dataset_dic.csv', d3.autoType)
 
 Promise.all([dataEnero, dataDiciembre]).then(([data_ene, data_dic]) => {
   // Combinar los dos conjuntos de datos en uno solo
