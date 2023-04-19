@@ -211,12 +211,31 @@ h1 {
     font-weight: 600;
 }
 
+.texto{
+    width: 1080px;
+    margin-left: 80px;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 20px;
+    color: rgb(83, 83, 83);
+    padding-top: 2px;
+}
+
+.texto h2{
+    text-align: left;
+    font-size: 26px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    padding-top: 30px;
+}
+
 .epigrafe {
     width: 1080px;
     margin-left: 80px;
     text-align: left;
     font-size: 20px;
-    color: rgb(83, 83, 83);
     line-height: 28px;
 }
 
@@ -225,19 +244,19 @@ hr {
     border: 1px solid #d5d5d5;
 }
 
-.chart {
+/* .chart {
     margin: 0 auto;
     display: block;
-    text-align: center;
-  }
+    text-align: left;
+  } */
 
 #chart_1 svg, #chart_2 svg, #chart_3 svg  {
-    max-width: initial;
-    margin-left: auto;
+    max-width: 100%;
+    margin-left: 120px;
     margin-right: auto;
     margin-top: 3em;
     margin-bottom: 3em;
-    align-items: center;
+    align-items: left;
 } 
 
 /* color footer: #343434; */
