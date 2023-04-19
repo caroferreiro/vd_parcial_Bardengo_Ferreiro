@@ -22,7 +22,8 @@ d3.dsv(';', '../data/dataset.csv', d3.autoType).then(data => {
   console.log(data2)
   let chart = Plot.plot({
     marks: [
-      Plot.ruleY([90]),
+      //Plot.ruleY([80]),
+      Plot.ruleX([-0.5]),
       Plot.barX(data2.filter(d => d.diffHasta > 10), { 
         x: 'diffHasta',
         y: 'cant',
@@ -32,34 +33,32 @@ d3.dsv(';', '../data/dataset.csv', d3.autoType).then(data => {
         stroke: 'diffHasta',
         strokeOpacity: 1,
         strokeWidth: 0.6,
-        // title: (d) => `${d.diffDesde}, ${d.diffHasta}`,
+        title: (d) => `${d.cant}`, 
         sort: {y: 'x', reverse:true},
       }),
-      // Plot.barX(data2.filter(d => d.diffHasta > 90), { 
-      //   x: 'diffHasta',
-      //   y: 'cant',
-      //   thresholds: 8,
-      //   fill: 'diffHasta',
-      //   fillOpacity: 0.3,
-      //   stroke: 'diffHasta',
-      //   strokeOpacity: 1,
-      //   strokeWidth: 0.6,
-      //   title: (d) => `Cantidad de denuncias: ${d.cant}`,
-      //   sort:(a,b) => d3.descending(a.diffHasta, b.diffHasta)
-      // }),
+      Plot.text(data2.filter(d=>d.diffHasta>100), {
+        x: d => d.diffHasta + 2, // position the text to the right of the bar
+        y: d => d.cant, // position the text at the center of the bar
+        text: d => d3.format('.0f')(d.diffHasta), // set the text to the value of mision_hs
+        fill: 'diffHasta',
+        textAnchor: 'start', // align the text to the left of the x position
+        fontWeight: 'bold',
+        fontSize: 14,
+      }),
       Plot.axisX({
         label: 'Días que tardó en resolverse →',
         labelOffset: 40,
         fontSize: 13,
+        tickFormat: null,
         ticks: 8,
       }),
       Plot.axisY({
-        label: 'Cantidad de denuncias →',
         label:null,
         labelOffset: 44,
         fontSize: 13,
-        ticks: 6,
+        ticks: ([]),
         tickFormat: null,
+       
       }),
       // Plot.text(data2, {
       //   x: 'diffHasta',
