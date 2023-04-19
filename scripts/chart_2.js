@@ -49,16 +49,25 @@ d3.dsv(';', '../data/dataset.csv', d3.autoType).then(data => {
       }),
       Plot.axisX({
         label: 'Días que tardó en resolverse →',
-        labelOffset: 35,
-        fontSize: 12,
+        labelOffset: 40,
+        fontSize: 13,
         ticks: 8,
       }),
       Plot.axisY({
         label: 'Cantidad de denuncias →',
         labelOffset: 44,
-        fontSize: 12,
+        fontSize: 13,
         ticks: 6,
+        tickFormat: null,
       }),
+      // Plot.text(data2, {
+      //   x: 'diffHasta',
+      //   y: 'cant',
+      //   text: ['Cantidad de denuncias →'],
+      //   fill: '#111111', 
+      //   dx: -10,
+      //   dy: 20,
+      // }),
     ],
     x: {
       domain: [1, d3.max(data2, d => d.diffHasta)],
@@ -75,7 +84,7 @@ d3.dsv(';', '../data/dataset.csv', d3.autoType).then(data => {
     insetLeft: 10,
     insetRight: 10,
     insetTop: 0,
-    marginBottom: 40,
+    marginBottom: 47,
     marginLeft: 47,
     })
     d3.select('#chart_2').append(() => chart)
