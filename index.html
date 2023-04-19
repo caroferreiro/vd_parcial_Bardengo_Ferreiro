@@ -13,56 +13,61 @@
   </head>
     <body>
     <br>
-    <div class="contenedor">
-      <div class="header">
-        <a>26 de abril 2023</a>
-        <!-- <img class="menu" src="/imgs/menu.png"> -->
-      </div>
-      <h1>INFO<a class="BA">BA</a></h1>
-      <div class="dropdown">
-        <button class="material-symbols-outlined">menu</button>
-      </div>
-      <div class="secciones">
-        <a class="not">Últimas Noticias</a>
-        <a class="pol">Política</a>
-        <a class="eco">Economía</a>
-        <a class="soc">Sociedad</a>
-        <a class="dep">Deportes</a>
-        <a class="mun">Mundo</a>
-      </div>
-      <div class="contenedor1">
-        <div class="subtitulo">
-          <h4> &#62; Tránsito</h4>
+       <div class="fondo">
+        <div class="contenedor">
+          <div class="header">
+            <a>26 de abril 2023</a>
+            <!-- <img class="menu" src="/imgs/menu.png"> -->
+          </div>
+          <h1>INFO<a class="BA">BA</a></h1>
+          <div class="dropdown">
+            <button class="material-symbols-outlined">menu</button>
+          </div>
+          <div class="secciones">
+            <a class="not">Últimas Noticias</a>
+            <a class="pol">Política</a>
+            <a class="eco">Economía</a>
+            <a class="soc">Sociedad</a>
+            <a class="dep">Deportes</a>
+            <a class="mun">Mundo</a>
+          </div>
+          <br>
+          <div class="container1">
+            <div class="contenedor1">
+              <div class="subtitulo">
+                <h4> &#62; Tránsito</h4>
+              </div>
+              <div class="cuerpo">
+                <h2>NUEVO SISTEMA DE ACARREO EN CABA: ¿QUÉ VINO A SOLUCIONAR LA LEY 24.489?</h2>
+                <p class="epigrafe">Debido al gran volumen de reclamos por autos mal estacionados en Ciudad de Buenos Aires, el gobierno porteño creo una serie de medidas que buscan mejorar el sistema de acarreos.</p>
+                <hr>
+              </div>
+              <br>
+              <div class="texto">
+                <h4> El sistema de acarreo utilizado hasta el momento no solo implicaba una gran suma de dinero por parte del Estado, sino que el mismo no funcionaba ya que se veía claramente colapsado debido a la gran cantidad de denuncias que los ciudadanos realizaban habitualmente. </h4>
+                <h2>INEFICIENCIA EN LA RESOLUCIÓN DE DENUNCIAS</h2>  
+                <h4>La ineficiencia en el sistema de acarreo quedó demostrado ante la tardanza en la determinacion de la denuncias. </h4>
+              </div>
+              <div class="chart" id="chart_2"></div>
+              <div class = "texto">
+                <p> Durante el mes de enero de 2021, en la Ciudad de Buenos Aires, hubo denuncias que han llegado a tardar 90, 110 o incluso 120 días en resolverse. Ahora, las grúas ya no tendrán que cubrir
+                  tantos casos como antes, sino que solo serán necesarias en casos muy particulares. Cuando se reciba un reporte por vehículo mal estacionado, la policía deberá encargarse tan solo de multar
+                  a quien corresponda y no de tener que localizar a una grúa para que se encargue del problema. </p>
+              </div>
+              <div class = "texto"> 
+                <h2>BARRIOS MAS COLAPSADOS</h2>
+                <h4>Epigrafe</h4>
+              </div>
+              <div class="chart" id="chart_4"></div>
+              <div class = "texto">
+                <h2> ¿MÁS TIEMPO, MAS CASOS SIN RESOLVER?</h2>
+                <h4>La cantidad de denuncias sin resolver aumentó exponencialmente a fines del 2021. Esto se debe a que hubo un aumento y, por ende, una acumulación de denuncias sin resolver a lo largo del año.</h4>
+              </div>
+              <div class="chart" id="chart_3"></div>
+            </div>
+          </div>
         </div>
-        <div class="cuerpo">
-          <h2>NUEVO SISTEMA DE ACARREO EN CABA: ¿QUÉ VINO A SOLUCIONAR LA LEY 24.489?</h2>
-          <p class="epigrafe">Debido al gran volumen de reclamos por autos mal estacionados en Ciudad de Buenos Aires, el gobierno porteño creo una serie de medidas que buscan mejorar el sistema de acarreos.</p>
-          <hr>
-        </div>
-        <br>
-        <div class="texto">
-          <h4> El sistema de acarreo utilizado hasta el momento no solo implicaba una gran suma de dinero por parte del Estado, sino que el mismo no funcionaba ya que se veía claramente colapsado debido a la gran cantidad de denuncias que los ciudadanos realizaban habitualmente. </h4>
-          <h2>INEFICIENCIA EN LA RESOLUCIÓN DE DENUNCIAS</h2>  
-          <h4>La ineficiencia en el sistema de acarreo quedó demostrado ante la tardanza en la determinacion de la denuncias. </h4>
-        </div>
-        <div class="chart" id="chart_2"></div>
-        <div class = "texto">
-          <p> Durante el mes de enero de 2021, en la Ciudad de Buenos Aires, hubo denuncias que han llegado a tardar 90, 110 o incluso 120 días en resolverse. Ahora, las grúas ya no tendrán que cubrir
-            tantos casos como antes, sino que solo serán necesarias en casos muy particulares. Cuando se reciba un reporte por vehículo mal estacionado, la policía deberá encargarse tan solo de multar
-            a quien corresponda y no de tener que localizar a una grúa para que se encargue del problema. </p>
-        </div>
-        <div class = "texto"> 
-          <h2>BARRIOS MAS COLAPSADOS</h2>
-          <h4>Epigrafe</h4>
-        </div>
-        <div class="chart" id="chart_4"></div>
-        <div class = "texto">
-          <h2> ¿MÁS TIEMPO, MAS CASOS SIN RESOLVER?</h2>
-          <h4>La cantidad de denuncias sin resolver aumentó exponencialmente a fines del 2021. Esto se debe a que hubo un aumento y, por ende, una acumulación de denuncias sin resolver a lo largo del año.</h4>
-        </div>
-        <div class="chart" id="chart_3"></div>
-      </div>
-    </div>
+       </div>
     <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
     <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
     <script src="/scripts/chart_1.js"></script>
