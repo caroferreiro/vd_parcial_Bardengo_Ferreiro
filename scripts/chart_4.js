@@ -1,7 +1,7 @@
-const mapaFetch = d3.json('../data/barrios-caba.geojson')
-const dataFetch = d3.dsv(';', '../data/dataset.csv', d3.autoType)
+const mapaFch = d3.json('../data/barrios-caba.geojson')
+const dataFch = d3.dsv(';', '../data/dataset_dic.csv', d3.autoType)
 
-Promise.all([mapaFetch, dataFetch]).then(([barrios, data]) => {
+Promise.all([mapaFch, dataFch]).then(([barrios, data]) => {
   
   /* Agrupamos reclamos x barrio */
   const reclamosPorBarrio = d3.group(data, d => d.domicilio_barrio) // crea un Map
@@ -52,5 +52,5 @@ Promise.all([mapaFetch, dataFetch]).then(([barrios, data]) => {
     width: 300,
     height: 300,
   })
-  d3.select('#chart_1').append(() => chartMap)
+  d3.select('#chart_4').append(() => chartMap)
 })
