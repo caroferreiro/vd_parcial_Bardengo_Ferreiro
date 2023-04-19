@@ -12,6 +12,7 @@
     padding: 16px;
     overflow: hidden;
     margin-right: 4%;
+    margin-left: 4%;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     text-align: right;
@@ -219,7 +220,16 @@ h1 {
     font-weight: 200;
     line-height: 20px;
     color: rgb(83, 83, 83);
+}
+
+.texto h4{
     padding-top: 2px;
+    font-weight: 400;
+}
+
+.texto p{
+    padding-bottom: 30px;
+    color: rgb(0, 0, 0);
 }
 
 .texto h2{
@@ -227,7 +237,7 @@ h1 {
     font-size: 26px;
     font-weight: 600;
     color: rgb(0, 0, 0);
-    padding-top: 30px;
+    padding-top: 10px;
 }
 
 .epigrafe {
