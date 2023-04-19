@@ -1,8 +1,20 @@
+.body {
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(fondo.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 .contenedor {
     max-width: 1280px;
     max-height: 1000px;
     margin: auto;
-    /* background-color: rgb(23, 23, 77); */
+}
+
+.contenedor1 {
+    max-width: 60%;
+    margin: auto;
 }
 
 .header {
@@ -191,39 +203,57 @@ h1 {
 }
 
 .subtitulo {
-    max-width: 100%;
+    /* max-width: 100%; */
     color: black;
     text-align: left;
-    margin-left: 80px;
-    padding: 10px;
+    /* margin-left: 80px; */
+    padding-top: 18px;
     font-family: 'Roboto', sans-serif;
 }
 
 .cuerpo {
-    max-width: 1280px;
+    /* max-width: 1280px; */
     font-family: 'Roboto', sans-serif;
+    color: rgb(83, 83, 83)
 }
+
 .cuerpo h2 {
-    width: 100%;
-    margin-left: 80px;
+    /* max-width: 100%; */
+    /* margin-left: 80px; */
     text-align: left;
-    font-size: 38px;
+    font-size: 30px;
     font-weight: 600;
+    line-height: 40px;
+    color:rgb(0, 0, 0);
+}
+
+.epigrafe {
+    /* max-width: 1080px; */
+    /* margin-left: 80px; */
+    text-align: left;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+hr {
+    border: 1px solid #d5d5d5;
+    margin-top: 20px;
 }
 
 .texto{
-    width: 1080px;
-    margin-left: 80px;
+    /* max-width: 1080px; */
+    /* margin-left: 80px; */
     text-align: left;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 200;
     line-height: 20px;
-    color: rgb(83, 83, 83);
+    color: #1f1f1f;
 }
 
 .texto h4{
     padding-top: 2px;
+    margin-top: 0px;
     font-weight: 400;
 }
 
@@ -240,26 +270,13 @@ h1 {
     padding-top: 10px;
 }
 
-.epigrafe {
-    width: 1080px;
-    margin-left: 80px;
-    text-align: left;
-    font-size: 20px;
-    line-height: 28px;
-}
-
-hr {
-    width: 1000px;
-    border: 1px solid #d5d5d5;
-}
-
 /* .chart {
     margin: 0 auto;
     display: block;
     text-align: left;
   } */
 
-#chart_2 svg, #chart_3 svg  {
+#chart_2 svg, #chart_3 svg, #chart_4 svg  {
     max-width: 100%;
     margin-left: 120px;
     margin-right: 10px;
@@ -268,14 +285,14 @@ hr {
     align-items: left;
 } 
 
-#chart_1 svg, #chart_4 svg  {
+/* #chart_1 svg, #chart_4 svg  {
     max-width: 100%;
     margin-right: 10px;
     margin-top: 3em;
     margin-bottom: 3em;
     align-items: left;
     margin-left: 0px;
-}
+} */
 
 #chart_1 {
     margin-left: 120px;
