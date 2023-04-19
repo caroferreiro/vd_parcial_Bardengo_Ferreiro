@@ -1,5 +1,5 @@
 .body {
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(fondo.jpeg);
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(fondo.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -8,8 +8,11 @@
 
 .contenedor {
     max-width: 1280px;
-    max-height: 1000px;
+    /* max-height: 1000px; */
     margin: auto;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
 }
 
 .contenedor1 {
@@ -30,6 +33,7 @@
     text-align: right;
     color: black;
     position: relative;
+    scroll-snap-align: start;
 }
 
 h1 {
@@ -259,22 +263,23 @@ hr {
 
 .texto p{
     padding-bottom: 30px;
-    color: rgb(0, 0, 0);
+    color: 1f1f1f;
 }
 
 .texto h2{
     text-align: left;
     font-size: 26px;
     font-weight: 600;
-    color: rgb(0, 0, 0);
-    padding-top: 10px;
+    color: 1f1f1f;
+    padding-top: 20px;
+    scroll-snap-align: start;
 }
 
-/* .chart {
+.chart {
     margin: 0 auto;
     display: block;
     text-align: left;
-  } */
+}
 
 #chart_2 svg, #chart_3 svg, #chart_4 svg  {
     max-width: 100%;
