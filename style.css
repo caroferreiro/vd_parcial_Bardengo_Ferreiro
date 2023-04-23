@@ -45,8 +45,13 @@
     color: black;
     position: relative;
     scroll-snap-align: start;
+    background-color: white;
 }
-
+.title{
+    background-color: white;
+    max-width: 60%;
+    margin: auto;
+}
 h1 {
     padding: 2px;
     font-family: 'Oswald', sans-serif;
@@ -143,7 +148,7 @@ h1 {
 
 .not {
     padding: 16px;
-    background-color: #f7d217a9;
+    /* background-color: #f7d217a9; */
     color: rgba(0, 0, 0, 0.662);
     text-align: center;
     font-family: 'Roboto', sans-serif;
@@ -163,8 +168,8 @@ h1 {
     font-family: 'Roboto', sans-serif;
 }
 .pol:hover {
-    background-color: #f7d217a9;
-    color: rgba(0, 0, 0, 0.662);
+    background-color: #f7d2176c;
+    color: rgba(0, 0, 0, 0.559);
 }
 
 .eco {
@@ -176,8 +181,8 @@ h1 {
     font-family: 'Roboto', sans-serif;
 }
 .eco:hover {
-    background-color: #f7d217a9;
-    color: rgba(0, 0, 0, 0.662);
+    background-color: #f7d2176c;
+    color: rgba(0, 0, 0, 0.559);
 }
 
 .soc {
@@ -189,8 +194,8 @@ h1 {
     font-family: 'Roboto', sans-serif;
 }
 .soc:hover {
-    background-color: #f7d217a9;
-    color: rgba(0, 0, 0, 0.662);
+    background-color: #f7d2176c;
+    color: rgba(0, 0, 0, 0.559);
 }
 
 .dep {
@@ -202,8 +207,8 @@ h1 {
     font-family: 'Roboto', sans-serif;
 }
 .dep:hover {
-    background-color: #f7d217a9;
-    color: rgba(0, 0, 0, 0.662);
+    background-color: #f7d2176c;
+    color: rgba(0, 0, 0, 0.559);
 }
 
 .mun {
@@ -214,8 +219,8 @@ h1 {
     font-family: 'Roboto', sans-serif;
 }
 .mun:hover {
-    background-color: #f7d217a9;
-    color: rgba(0, 0, 0, 0.662);
+    background-color: #f7d2176c;
+    color: rgba(0, 0, 0, 0.559);
 }
 
 .subtitulo {
@@ -279,6 +284,7 @@ hr {
 }
 
 .texto h2{
+    font-family: 'Fjalla One', sans-serif;
     text-align: left;
     font-size: 26px;
     font-weight: 600;
@@ -322,4 +328,6 @@ hr {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
 }
-/* color footer: #343434; */
+.footer{
+    color: #343434;
+}
