@@ -17,13 +17,6 @@ d3.dsv(';', '../data/dataset_dic.csv', d3.autoType).then(data_dic => {
   d.fecha_ingreso = parseTime(d.fecha_ingreso);
   })
 
-  // let data_cant = d3.bin()
-  // .value(d => d.dia)(data_dic.filter(d => d.estado_del_contacto == 'Abierto'))
-  // .map(d => {
-  //   return {cant: d.length,}
-  // })
-  // console.log(data_cant)
-
   var formatMonth = d3.timeFormat('%m');
     data_dic.forEach(function(d) {
     d.mes = formatMonth(d.fecha_ingreso);
@@ -36,7 +29,7 @@ d3.dsv(';', '../data/dataset_dic.csv', d3.autoType).then(data_dic => {
 
     //let enero = data.filter(d => d.mes == '01');
     //let dic = data.filter(d => d.mes == '12');
-    //console.log(enero.filter(d => d.estado_del_contacto == 'Abierto'))
+    let dic_A = data_dic.filter(d => d.estado_del_contacto == 'Abierto');
     let chart = Plot.plot({
       marks: [
         Plot.ruleX([0]),
@@ -49,14 +42,20 @@ d3.dsv(';', '../data/dataset_dic.csv', d3.autoType).then(data_dic => {
         // Plot.line(enero.filter(d => d.estado_del_contacto == 'Cerrado'), Plot.binX({y:'sum'} ,{
         //   x: 'dia',
         // })),
-        Plot.line(data_dic.filter(d => d.estado_del_contacto == 'Abierto'), Plot.binX({y:'count'}, {
+        Plot.line(dic_A, Plot.binX({y:'count'}, {
           x: 'dia',
           stroke: 'mes',
           strokeWidth: 3.2,
+          // marker: 'circle',
+          // r: 0.5,
         })),
-        // Plot.line(dic.filter(d => d.estado_del_contacto == 'Cerrado'), Plot.binX({y:'sum'}, {
-        //   x: 'dia',
-        // })),
+        Plot.line(dic_A.filter(d => d.dia == '31'),{
+          x: 'dia',
+          y: 500,
+          marker: 'circle',
+          r: 5,
+          fill: 'CornflowerBlue'
+        }),
         Plot.axisX({
           label: 'Días del mes →',
           labelOffset: 35,
@@ -78,6 +77,15 @@ d3.dsv(';', '../data/dataset_dic.csv', d3.autoType).then(data_dic => {
         //   fontWeight: 'bold',
         //   fontSize: 14,
         // }),
+        Plot.text(dic_A.filter(d => d.dia == '31'), {
+          x: 'dia',
+          y: d3.max(data_dic.filter(d => d.estado_del_contacto == 'Abierto'), d => d3.bin().value(v => v.dia)(d).length),
+          text: `${d3.max(data_dic.filter(d => d.estado_del_contacto == 'Abierto'), d => d3.bin().value(v => v.dia)(d).length)}`,
+          fontSize: 14,
+          fill: 'black',
+          textAnchor: 'end',
+          alignmentBaseline: 'hanging',
+        }),
       ],
       x: {
         domain: [1, 31],

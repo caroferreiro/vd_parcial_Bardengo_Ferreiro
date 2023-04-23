@@ -11,7 +11,6 @@ d3.dsv(';', '../data/dataset.csv', d3.autoType).then(data => {
       d.fecha_cierre_contacto = parseTime(d.fecha_cierre_contacto);
       d.diff = d3.timeDay.count(d.fecha_ingreso, d.fecha_cierre_contacto);
   });
-  console.log(data)
 
   let data2 = d3.bin()
     .value(d => d.diff)(data)

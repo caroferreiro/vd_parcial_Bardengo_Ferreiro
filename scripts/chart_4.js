@@ -5,7 +5,7 @@ Promise.all([mapaFch, dataFch]).then(([barrios, data]) => {
   
   /* Agrupamos reclamos x barrio */
   const reclamosPorBarrio = d3.group(data, d => d.domicilio_barrio) // crea un Map
-  console.log('reclamosPorBarrio', reclamosPorBarrio)
+  // console.log('reclamosPorBarrio', reclamosPorBarrio)
   
   /* Mapa Coroplético */
   let chartMap = Plot.plot({
