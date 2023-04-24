@@ -32,7 +32,7 @@ d3.dsv(';', '../data/dataset.csv', d3.autoType).then(data => {
         stroke: 'diffHasta',
         strokeOpacity: 1,
         strokeWidth: 0.6,
-        title: (d) => `${d.cant}`, 
+        title: (d) => `Cantidad de denuncias: ${d.cant}`, 
         sort: {y: 'x', reverse:true},
       }),
       Plot.text(data2.filter(d=>d.diffHasta>100), {
@@ -79,7 +79,7 @@ d3.dsv(';', '../data/dataset.csv', d3.autoType).then(data => {
     fontFamily: 'sans-serif',
     zero: false,
     width: 450,
-    height: 450,
+    height: 400,
     insetLeft: 10,
     insetRight: 10,
     insetTop: 0,

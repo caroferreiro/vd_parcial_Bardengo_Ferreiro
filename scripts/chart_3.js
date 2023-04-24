@@ -106,7 +106,7 @@ d3.dsv(';', '../data/dataset_dic.csv', d3.autoType).then(data_dic => {
     
       fontFamily: 'sans-serif',
       width: 500,
-      height: 400,
+      height: 370,
       insetLeft: 10,
       insetRight: 10,
       insetTop: 10,

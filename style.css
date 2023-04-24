@@ -8,7 +8,7 @@
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    overflow-y: scroll ;
+    overflow-y: scroll;
 }
 
 .contenedor {
@@ -16,8 +16,8 @@
     /* max-height: 1000px; */
     margin: auto;
     height: 100vh;
-    /* overflow-y: scroll; */
-    scroll-snap-type: y mandatory;
+    /* overflow-y: scroll;
+    scroll-snap-type: y mandatory; */
 }
 
 .container1{
@@ -52,7 +52,8 @@
     background-color: white;
     max-width: 60%;
     margin: auto;
-    overflow-y: hidden;
+    /* overflow-y: hidden;
+    scroll-snap-align: start; */
 } 
 h1 {
     padding: 2px;
@@ -147,7 +148,7 @@ h1 {
     top: 0;
     margin-top: 130px;
     margin-left: 80px;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
 
 .secciones {
@@ -246,7 +247,7 @@ h1 {
     color: black;
     text-align: left;
     /* margin-left: 80px; */
-    padding-top: 18px;
+    padding-top: 0px;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -264,9 +265,10 @@ h1 {
     font-family: 'Bebas Neue', cursive;
     font-size: 50px;
     font-weight: 500;
-    line-height: 50px;
+    line-height: 48px;
     color:rgb(0, 0, 0);
-    padding-bottom: 5px;
+    padding-bottom: 0px;
+    /* scroll-snap-align: start; */
 }
 
 .cuerpo p{
@@ -275,6 +277,7 @@ h1 {
     color: #3f3f3f;
     font-weight: 100;
     font-size: 16px;
+    margin-top: 0px;
     padding-bottom: 5px;
 }
 .epigrafe {
@@ -299,7 +302,7 @@ hr {
     /* margin-left: 80px; */
     text-align: left;
     font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 200;
     line-height: 25px;
     color: #1f1f1f;
@@ -307,8 +310,9 @@ hr {
 
 .texto h4{
     padding-top: 2px;
-    margin-top: 0px;
+    margin-top: 10px;
     font-weight: 400;
+    font-size: 16px;
 }
 
 .texto h3{
@@ -321,6 +325,7 @@ hr {
 .texto p{
     padding-bottom: 10px;
     color: #1f1f1f;
+    font-size: 16px;
 }
 
 .texto h2{
@@ -331,6 +336,8 @@ hr {
     font-weight: 400;
     color:#1f1f1f;
     scroll-snap-align: start;
+    padding-top: 20px;
+    margin-bottom: 10px;
 }
 
 .chart {
@@ -339,16 +346,47 @@ hr {
     text-align: left;
 }
 
-#chart_2 svg, #chart_3 svg, #chart_4 svg  {
+#chart_2 svg {
     max-width: 100%;
-    margin-left: 120px;
+    margin-left: 80px;
+    margin-right: 10px;
+    margin-top: -20px;
+    margin-bottom: 3em;
+    align-items: left;
+}
+#chart_3 svg {
+    max-width: 100%;
+    margin-left: 50px;
+    /* margin-right: 10px; */
+    margin-top: 60px;
+    margin-bottom: 3em;
+    align-items: center;
+}
+#chart_4 svg {
+    max-width: 100%;
+    margin-left: 80px;
     margin-right: 10px;
     margin-top: 3em;
     margin-bottom: 3em;
     align-items: left;
-} 
-
-
+}
+.num {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: bolder;
+    margin-bottom: -83px;
+    margin-left: 510px;
+    color: #6495ed;
+    font-family: sans-serif;
+}
+.circulo {
+    background: #6495ed;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin-top: -375px;
+    margin-left: 515px;
+}
 /* #chart_1 svg, #chart_4 svg  {
     max-width: 100%;
     margin-right: 10px;
@@ -357,10 +395,9 @@ hr {
     align-items: left;
     margin-left: 0px;
 } */
-
-#chart_1 {
+/* #chart_1 {
     margin-left: 120px;
-}
+} */
 .footer{
     max-width: 100%;
     margin-left: 4%;
@@ -373,6 +410,7 @@ hr {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     /* color:white; */
+    scroll-snap-align: start;
 }
 .footer-column1{
     align-items: center;
