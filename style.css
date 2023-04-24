@@ -1,6 +1,6 @@
-/* *{
+*{
     box-sizing: border-box;
-} */
+} 
 
 .fondo {
     background-image: linear-gradient(rgba(255, 255, 255, 0.7),rgba(255, 255, 255, 0.7)), url(fondo.jpg);
@@ -340,8 +340,10 @@ hr {
 }
 .footer{
     max-width: 100%;
+    margin-left: 4%;
+    margin-right: 4%;
     border-top: 1px solid #d5d5d5;
-    background-color: #0505059a;
+    background-color: #363636ef;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
