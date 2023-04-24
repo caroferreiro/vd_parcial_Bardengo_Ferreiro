@@ -27,6 +27,14 @@ d3.dsv(';', '../data/dataset_dic.csv', d3.autoType).then(data_dic => {
     d.dia = formatDay(d.fecha_ingreso);
   });
 
+  const datos_abiertos = data_dic.filter(d => d.estado_del_contacto == 'Abierto' && d.mes == 12);
+  // Encontrar la cantidad máxima de casos abiertos en un día dado
+  const casos_maximos_por_dia = [];
+  for (let dia = 1; dia <= 31; dia++) {
+  const casos_abiertos = datos_abiertos.filter(d => d.dia == dia).length;
+  casos_maximos_por_dia.push(casos_abiertos);
+  }
+
     //let enero = data.filter(d => d.mes == '01');
     //let dic = data.filter(d => d.mes == '12');
     let dic_A = data_dic.filter(d => d.estado_del_contacto == 'Abierto');
@@ -77,27 +85,27 @@ d3.dsv(';', '../data/dataset_dic.csv', d3.autoType).then(data_dic => {
         //   fontWeight: 'bold',
         //   fontSize: 14,
         // }),
-        Plot.text(dic_A.filter(d => d.dia == '31'), {
-          x: 'dia',
-          y: d3.max(data_dic.filter(d => d.estado_del_contacto == 'Abierto'), d => d3.bin().value(v => v.dia)(d).length),
-          text: `${d3.max(data_dic.filter(d => d.estado_del_contacto == 'Abierto'), d => d3.bin().value(v => v.dia)(d).length)}`,
-          fontSize: 14,
-          fill: 'black',
-          textAnchor: 'end',
-          alignmentBaseline: 'hanging',
-        }),
+        // Plot.text(dic_A.filter(d => d.dia == '31' && d.estado_del_contacto == 'Abierto'), Plot.groupX({y: 'sum'},{
+        //   x: 'dia',
+        //   //y: d3.max(data_dic.filter(d => d.estado_del_contacto == 'Abierto'), d => d3.bin().value(v => v.dia)(d).length),
+        //   text: `${d3.max(data_dic.filter(d => d.estado_del_contacto == 'Abierto'), d => d3.bin().value(v => v.dia)(d).length)}`,
+        //   fontSize: 14,
+        //   fill: 'black',
+        //   textAnchor: 'end',
+        //   alignmentBaseline: 'hanging',
+        // })),
+
       ],
       x: {
         domain: [1, 31],
       },
       color: {
-        range: ['CornflowerBlue'],
-          //'YellowGreen', 
+        range: ['CornflowerBlue']
       },
     
       fontFamily: 'sans-serif',
       width: 500,
-      height: 300,
+      height: 400,
       insetLeft: 10,
       insetRight: 10,
       insetTop: 10,

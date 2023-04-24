@@ -253,25 +253,40 @@ h1 {
 .cuerpo {
     /* max-width: 1280px; */
     font-family: 'Roboto', sans-serif;
-    color: rgb(83, 83, 83)
+    /* color: rgb(83, 83, 83) */
+    color: #1f1f1f;
 }
 
 .cuerpo h2 {
     /* max-width: 100%; */
     /* margin-left: 80px; */
     text-align: left;
-    font-size: 30px;
-    font-weight: 600;
-    line-height: 40px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 50px;
     color:rgb(0, 0, 0);
+    padding-bottom: 5px;
 }
 
+.cuerpo p{
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    color: #3f3f3f;
+    font-weight: 100;
+    font-size: 16px;
+    padding-bottom: 5px;
+}
 .epigrafe {
     /* max-width: 1080px; */
     /* margin-left: 80px; */
     text-align: left;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     line-height: 25px;
+    padding-bottom: 10px;
+    font-weight: 300;
+    color: #1f1f1f;
 }
 
 hr {
@@ -284,9 +299,9 @@ hr {
     /* margin-left: 80px; */
     text-align: left;
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 200;
-    line-height: 20px;
+    line-height: 25px;
     color: #1f1f1f;
 }
 
@@ -296,18 +311,25 @@ hr {
     font-weight: 400;
 }
 
+.texto h3{
+    font-size: 14px;
+    font-weight:600;
+    text-align: right;
+    color:rgb(0, 0, 0);
+    padding-bottom: 10px;
+}
 .texto p{
-    padding-bottom: 30px;
-    color: 1f1f1f;
+    padding-bottom: 10px;
+    color: #1f1f1f;
 }
 
 .texto h2{
-    font-family: 'Fjalla One', sans-serif;
+    /* font-family: 'Fjalla One', sans-serif; */
+    font-family: 'Bebas Neue', cursive;
     text-align: left;
-    font-size: 26px;
-    font-weight: 600;
-    color: 1f1f1f;
-    padding-top: 20px;
+    font-size: 32px;
+    font-weight: 400;
+    color:#1f1f1f;
     scroll-snap-align: start;
 }
 
@@ -325,6 +347,7 @@ hr {
     margin-bottom: 3em;
     align-items: left;
 } 
+
 
 /* #chart_1 svg, #chart_4 svg  {
     max-width: 100%;

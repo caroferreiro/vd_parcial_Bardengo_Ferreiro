@@ -49,8 +49,8 @@ Promise.all([mapaFch, dataFch]).then(([barrios, data]) => {
         })
       )
     ],
-    width: 300,
-    height: 300,
+    width: 400,
+    height: 400,
   })
   d3.select('#chart_4').append(() => chartMap)
 })
