@@ -34,6 +34,7 @@ d3.dsv(';', '../data/dataset_dic.csv', d3.autoType).then(data_dic => {
   const casos_abiertos = datos_abiertos.filter(d => d.dia == dia).length;
   casos_maximos_por_dia.push(casos_abiertos);
   }
+  console.log(casos_maximos_por_dia)
 
     //let enero = data.filter(d => d.mes == '01');
     //let dic = data.filter(d => d.mes == '12');
@@ -57,13 +58,13 @@ d3.dsv(';', '../data/dataset_dic.csv', d3.autoType).then(data_dic => {
           // marker: 'circle',
           // r: 0.5,
         })),
-        Plot.line(dic_A.filter(d => d.dia == '31'),{
-          x: 'dia',
-          y: 500,
-          marker: 'circle',
-          r: 5,
-          fill: 'CornflowerBlue'
-        }),
+        // Plot.line(dic_A.filter(d => d.dia == '31'),{
+        //   x: 'dia',
+        //   y: 500,
+        //   marker: 'circle',
+        //   r: 5,
+        //   fill: 'CornflowerBlue'
+        // }),
         Plot.axisX({
           label: 'Días del mes →',
           labelOffset: 35,
