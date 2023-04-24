@@ -20,7 +20,7 @@ Promise.all([mapaFch, dataFch]).then(([barrios, data]) => {
       n: 10,
       scheme: 'gnbu',
       type: 'cyclical',
-      domain: [0, 1500],
+      domain: [0, 1700],
       range: [0, 1],
       strokeWidth: 3,
       label: 'Cantidad de denuncias',
@@ -40,17 +40,30 @@ Promise.all([mapaFch, dataFch]).then(([barrios, data]) => {
         barrios.features,
         Plot.centroid({
           text: (d) => d.properties.BARRIO,
-          fill: "currentColor",
+          fill: "currentcolor",
           stroke: null,
           textAnchor: "center",
-          fontWeight: 'bold',
+          fontWeight: "600",
+          fontSize: 11,
           dx: 4,
           filter: (d) => reclamosPorBarrio.get(d.properties.BARRIO).length > 500
-        })
+        })),   
+        Plot.text(
+          barrios.features,
+          Plot.centroid({
+            text: (d) => d.properties.BARRIO,
+            fill: "#e6ffcc",
+            stroke: null,
+            textAnchor: "center",
+            fontWeight: "600",
+            fontSize: 11,
+            dx: 4,
+            filter: (d) => reclamosPorBarrio.get(d.properties.BARRIO).length > 1700
+          })
       )
     ],
-    width: 400,
-    height: 400,
+    width: 380,
+    height: 380,
   })
   d3.select('#chart_4').append(() => chartMap)
 })

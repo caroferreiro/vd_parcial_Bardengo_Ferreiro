@@ -285,7 +285,7 @@ h1 {
     /* margin-left: 80px; */
     text-align: left;
     font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 25px;
     padding-bottom: 10px;
     font-weight: 300;
@@ -313,6 +313,7 @@ hr {
     margin-top: 10px;
     font-weight: 400;
     font-size: 16px;
+    text-align: center;
 }
 
 .texto h3{
@@ -326,16 +327,17 @@ hr {
     padding-bottom: 10px;
     color: #1f1f1f;
     font-size: 16px;
+    text-align: center;
 }
 
 .texto h2{
     /* font-family: 'Fjalla One', sans-serif; */
     font-family: 'Bebas Neue', cursive;
-    text-align: left;
+    text-align: center;
     font-size: 32px;
     font-weight: 400;
     color:#1f1f1f;
-    scroll-snap-align: start;
+    /* scroll-snap-align: start; */
     padding-top: 20px;
     margin-bottom: 10px;
 }
@@ -366,21 +368,20 @@ hr {
     max-width: 100%;
     margin-left: 80px;
     margin-right: 10px;
-    margin-top: 3em;
+    margin-top: -20px;
     margin-bottom: 3em;
     align-items: left;
 }
 .num {
     font-family: 'Roboto', sans-serif;
-    font-size: 13px;
-    font-weight: bolder;
+    font-size: 13.5px;
+    font-weight: 780;
     margin-bottom: -83px;
-    margin-left: 510px;
-    color: #6495ed;
-    font-family: sans-serif;
+    margin-left: 508px;
+    color: #2b8cbe;
 }
 .circulo {
-    background: #6495ed;
+    background: #2b8cbe;
     border-radius: 50%;
     width: 10px;
     height: 10px;
@@ -461,4 +462,7 @@ hr {
     font-size: 13px;
     text-align: center;
     letter-spacing: 1px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-weight: 400;
 }

@@ -54,7 +54,7 @@ d3.dsv(';', '../data/dataset_dic.csv', d3.autoType).then(data_dic => {
         Plot.line(dic_A, Plot.binX({y:'count'}, {
           x: 'dia',
           stroke: 'mes',
-          strokeWidth: 3.2,
+          strokeWidth: 4,
           // marker: 'circle',
           // r: 0.5,
         })),
@@ -68,13 +68,13 @@ d3.dsv(';', '../data/dataset_dic.csv', d3.autoType).then(data_dic => {
         Plot.axisX({
           label: 'Días del mes →',
           labelOffset: 35,
-          fontSize: 12,
+          fontSize: 13,
           ticks: 20,
         }),
         Plot.axisY({
           label: 'Cantidad de denuncias abiertas ↑',
           labelOffset: 27,
-          fontSize: 12,
+          fontSize: 13,
           ticks: 6,
         }),
         // Plot.text(data_cant.filter(d=>d.cant<150), {
@@ -101,7 +101,7 @@ d3.dsv(';', '../data/dataset_dic.csv', d3.autoType).then(data_dic => {
         domain: [1, 31],
       },
       color: {
-        range: ['CornflowerBlue']
+        range: ['#2b8cbe']
       },
     
       fontFamily: 'sans-serif',
