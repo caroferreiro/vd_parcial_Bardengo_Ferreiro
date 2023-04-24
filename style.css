@@ -1,6 +1,6 @@
-*{
+/* *{
     box-sizing: border-box;
-}
+} */
 
 .fondo {
     background-image: linear-gradient(rgba(255, 255, 255, 0.7),rgba(255, 255, 255, 0.7)), url(fondo.jpg);
@@ -64,6 +64,16 @@ h1 {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+.footer-column1 h2 {
+    padding: 2px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 45px;
+    max-width: 100%;
+    color: rgb(246, 246, 246);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
 .BA {
     font-family: 'Rubik', sans-serif;
@@ -71,7 +81,12 @@ h1 {
     font-weight: 800;
     color: #f7d117;
 }
-
+.BA2 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    color: #f7d117;
+}
 /* .dropdown {
     overflow: hidden;
     background-color: #ffffff;
@@ -323,14 +338,64 @@ hr {
 #chart_1 {
     margin-left: 120px;
 }
-.col {
+.footer{
     max-width: 100%;
+    border-top: 1px solid #d5d5d5;
+    background-color: #0505059a;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: left;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    /* color:white; */
+}
+.footer-column1{
+    align-items: center;
+}
+.d23-svg-icon-bg:hover{
+    fill: #c4c2c26c;
+    color: #f1e9e9;
+}
+.d23-social-media-buttons{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.footer-column2{
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-weight: 100;
+}
+.d23-footer-section{
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    text-align: center;
+    gap: 10;
+    margin-top: 8px;
+    color: rgb(255, 255, 255);
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
 }
-.footer{
-    color: #343434;
+.sec{
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    min-width: 48px;
+}
+.footer-title{
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+.footer-column3 p{
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: 1px;
 }
