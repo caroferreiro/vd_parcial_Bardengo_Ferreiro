@@ -16,8 +16,8 @@
     /* max-height: 1000px; */
     margin: auto;
     height: 100vh;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
+    /* overflow-y: scroll;
+    scroll-snap-type: y mandatory; */
 }
 
 .container1{
@@ -44,7 +44,7 @@
     text-align: right;
     color: black;
     position: relative;
-    scroll-snap-align: start;
+    /* scroll-snap-align: start; */
     background-color: white;
 }
 .title{
@@ -53,7 +53,7 @@
     max-width: 60%;
     margin: auto;
     overflow-y: hidden;
-    scroll-snap-align: start;
+    /* scroll-snap-align: start; */
 } 
 h1 {
     padding: 2px;
@@ -163,7 +163,7 @@ h1 {
     border-right: none;
     box-shadow: 0 2px 5px rgba(0,0,0,.15);
     background-color: #f7d217a9;
-    scroll-snap-align: start;
+    /* scroll-snap-align: start; */
 }
 
 .not {
@@ -270,7 +270,7 @@ h1 {
     color:rgb(0, 0, 0);
     padding-top: 5px;
     padding-bottom: 0px;
-    scroll-snap-align: start;
+    /* scroll-snap-align: start; */
 }
 
 .cuerpo p{
@@ -340,7 +340,7 @@ hr {
     font-size: 32px;
     font-weight: 400;
     color:#1f1f1f;
-    scroll-snap-align: start;
+    /* scroll-snap-align: start; */
     padding-top: 20px;
     margin-bottom: 10px;
 }
@@ -414,7 +414,7 @@ hr {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     /* color:white; */
-    scroll-snap-align: start;
+    /* scroll-snap-align: start; */
 }
 .footer-column1{
     align-items: center;
