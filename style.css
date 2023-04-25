@@ -16,8 +16,8 @@
     /* max-height: 1000px; */
     margin: auto;
     height: 100vh;
-    /* overflow-y: scroll;
-    scroll-snap-type: y mandatory; */
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
 }
 
 .container1{
@@ -52,8 +52,8 @@
     background-color: white;
     max-width: 60%;
     margin: auto;
-    /* overflow-y: hidden;
-    scroll-snap-align: start; */
+    overflow-y: hidden;
+    scroll-snap-align: start;
 } 
 h1 {
     padding: 2px;
@@ -163,6 +163,7 @@ h1 {
     border-right: none;
     box-shadow: 0 2px 5px rgba(0,0,0,.15);
     background-color: #f7d217a9;
+    scroll-snap-align: start;
 }
 
 .not {
@@ -267,8 +268,9 @@ h1 {
     font-weight: 500;
     line-height: 48px;
     color:rgb(0, 0, 0);
+    padding-top: 5px;
     padding-bottom: 0px;
-    /* scroll-snap-align: start; */
+    scroll-snap-align: start;
 }
 
 .cuerpo p{
@@ -278,7 +280,7 @@ h1 {
     font-weight: 100;
     font-size: 16px;
     margin-top: 0px;
-    padding-bottom: 5px;
+    padding-bottom: 2px;
 }
 .epigrafe {
     /* max-width: 1080px; */
@@ -290,6 +292,7 @@ h1 {
     padding-bottom: 10px;
     font-weight: 300;
     color: #1f1f1f;
+    margin-top: 20px;
 }
 
 hr {
@@ -337,7 +340,7 @@ hr {
     font-size: 32px;
     font-weight: 400;
     color:#1f1f1f;
-    /* scroll-snap-align: start; */
+    scroll-snap-align: start;
     padding-top: 20px;
     margin-bottom: 10px;
 }
