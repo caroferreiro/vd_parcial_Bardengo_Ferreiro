@@ -261,7 +261,7 @@ h1 {
 .cuerpo h2 {
     /* max-width: 100%; */
     /* margin-left: 80px; */
-    text-align: left;
+    text-align: center;
     font-family: 'Bebas Neue', cursive;
     font-size: 50px;
     font-weight: 500;
@@ -283,7 +283,7 @@ h1 {
 .epigrafe {
     /* max-width: 1080px; */
     /* margin-left: 80px; */
-    text-align: left;
+    text-align: center;
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
     line-height: 25px;
